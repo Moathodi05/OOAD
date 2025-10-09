@@ -11,22 +11,22 @@ public class BankingSystem {
     }
     
     private static void initializeSystem() {
-        bank = new Bank("Botswana International Bank");
+        bank = new Bank("Fisrt National Bank");
         scanner = new Scanner(System.in);
         initializeSampleData();
     }
     
     private static void initializeSampleData() {
         // Create sample data for demonstration
-        Customer customer1 = new Customer("John", "Doe", "123 Main St, Gaborone");
-        Customer customer2 = new Customer("Mary", "Smith", "456 Broad St, Francistown");
+        Customer customer1 = new Customer("Moathodi", "Ditshike", "27482 Block 3, Gaborone");
+        Customer customer2 = new Customer("Thato", "Ditshike", "3452 Area W, Francistown");
         
         bank.addCustomer(customer1);
         bank.addCustomer(customer2);
         
         // Create companies for cheque accounts
-        Company company1 = new Company("Tech Solutions Ltd", "789 Innovation Drive, Gaborone");
-        Company company2 = new Company("Global Corp", "321 Business Park, Francistown");
+        Company company1 = new Company("Tech Solutions Ltd", "789 Fairgrounds, Gaborone");
+        Company company2 = new Company("Creative Cactus", "678 Block Industirial, Gaborone");
         
         // Open sample accounts
         try {
@@ -52,7 +52,7 @@ public class BankingSystem {
     }
     
     private static void runBankingSystem() {
-        System.out.println("=== Botswana International Banking System ===");
+        System.out.println("=== First National Bank ===");
         System.out.println("Bank: " + bank.getName());
         System.out.println("Total Customers: " + bank.getCustomers().size());
         System.out.println("Total Accounts: " + bank.getAccounts().size());
@@ -129,4 +129,5 @@ public class BankingSystem {
             }
         }
     }
+
 }
